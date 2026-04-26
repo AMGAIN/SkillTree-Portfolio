@@ -3,6 +3,9 @@ import React from 'react'
 import { useState } from 'react'
 import { motion, Reorder } from 'framer-motion'
 
+import { BsThreeDotsVertical } from "react-icons/bs";
+
+
 const initialItems = [
     { id: 1, text: "Write Notes", color: "#FF6B6B" },
     { id: 2, text: "Wake up", color: "#4ECDC4" },
@@ -73,7 +76,7 @@ const page = () => {
             </div>
             <div className='flex justify-center gap-100 h-full items-center'>
                 <h1 className='text-2xl'>
-                DAY-7: 
+                    DAY-7:
                 </h1>
                 <div className='bg-zinc-800 flex flex-col items-center justify-evenly rounded-2xl w-96 h-auto min-h-96 p-6'>
                     <h1 className='text-3xl text-white text-center mb-4'>
@@ -111,19 +114,8 @@ const page = () => {
                                 }}
                             >
                                 <div className="flex items-center gap-3">
-                                    <div className="text-slate-700 opacity-50">
-                                        <svg
-                                            width="20"
-                                            height="20"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6ZM12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8ZM12 14C13.1 14 14 14.9 14 16C14 17.1 13.1 18 12 18C10.9 18 10 17.1 10 16C10 14.9 10.9 14 12 14Z"
-                                                fill="currentColor"
-                                            />
-                                        </svg>
+                                    <div className="w-12 h-12 flex justify-center items-center opacity-100 ">
+                                        <BsThreeDotsVertical className='text-gray-300 h-full w-full ' />
                                     </div>
                                     <span className="text-slate-800 font-medium text-lg">
                                         {item.text}
